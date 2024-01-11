@@ -47,6 +47,6 @@ Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-k
 ## Release
 
 1. close milestone
-1. on local console: `mvn release:start` - wait for action
-1. on local console: `mvn release:finish` - wait for action - sonatype pipeline will run
+1. on local console: `mvn gitflow:release-start` - wait for action
+1. on local console: `mvn gitflow:release-finish` - wait for action - sonatype pipeline will run
 1. github release - publish
