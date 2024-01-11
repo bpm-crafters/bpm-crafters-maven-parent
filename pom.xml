@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2024.01.1-SNAPSHOT</version>
+  <version>2024.1.1-SNAPSHOT</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -789,9 +789,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</connection>
-    <url>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</url>
-    <developerConnection>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</developerConnection>
+    <connection>scm:git:git@github.com:bpm-crafters/bpm-crafters-maven-parent.git</connection>
+    <url>scm:git:git@github.com:bpm-crafters/bpm-crafters-maven-parent.git</url>
+    <developerConnection>scm:git:git@github.com:bpm-crafters/bpm-crafters-maven-parent.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
