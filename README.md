@@ -46,7 +46,7 @@ Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-k
 
 ## Release
 
-1. close milestone
+1. close milestone in GitHub - this will create a GitHub release draft
 1. on local console: `mvn gitflow:release-start` - wait for action
 1. on local console: `mvn gitflow:release-finish` - wait for action - sonatype pipeline will run
-1. github release - publish
+1. publish release in GitHub (open draft and publish it)
