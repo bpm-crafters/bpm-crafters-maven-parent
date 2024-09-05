@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2024.8.1</version>
+  <version>2024.9.1</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -35,7 +35,7 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>2.0.10</kotlin.version>
+    <kotlin.version>2.0.20</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -47,7 +47,7 @@
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
     <!-- TEST -->
-    <junit5.version>5.10.3</junit5.version>
+    <junit5.version>5.11.0</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -341,7 +341,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>3.10.0</version>
           <executions>
             <execution>
               <id>attach-javadocs</id>
@@ -391,14 +391,14 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.6.1</version>
+          <version>3.8.0</version>
         </plugin>
 
         <!-- DEPLOY (version, config) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.1.3</version>
           <configuration>
             <skip>${kp.plugin.skipDeploy}</skip>
           </configuration>
@@ -433,7 +433,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>3.5.0</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -463,7 +463,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.1.3</version>
         </plugin>
 
         <!-- SOURCE (version) -->
@@ -487,7 +487,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>3.5.0</version>
 
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
@@ -606,7 +606,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.7.0</version>
+          <version>7.8.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
