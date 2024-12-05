@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2024.12.2-SNAPSHOT</version>
+  <version>2024.12.2</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
