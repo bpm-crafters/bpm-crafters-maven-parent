@@ -17,7 +17,7 @@ By nature of this module, it is a highly opinionated approach. It might fit your
 
 Since this parent countless versions of other libs and plugins, it cannot have any meaningful version itself.
 
-The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2024.1.0` ... and counting.
+The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2024.09.1` ... and counting.
 
 ## How to use?
 
