@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2025.04.1</version>
+  <version>2025.04.2</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -44,10 +44,10 @@
     <jdk.version>17</jdk.version>
 
     <kotlinx-serialization.version>1.6.0</kotlinx-serialization.version>
-    <kotlin-logging.version>7.0.5</kotlin-logging.version>
+    <kotlin-logging.version>7.0.6</kotlin-logging.version>
 
     <!-- TEST -->
-    <junit5.version>5.12.1</junit5.version>
+    <junit5.version>5.12.2</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -533,7 +533,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.12</version>
+          <version>0.8.13</version>
           <executions>
             <execution>
               <id>pre-unit-test</id>

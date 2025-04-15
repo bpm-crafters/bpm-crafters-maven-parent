@@ -17,7 +17,7 @@ By nature of this module, it is a highly opinionated approach. It might fit your
 
 Since this parent countless versions of other libs and plugins, it cannot have any meaningful version itself.
 
-The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2024.1.0` ... and counting.
+The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2024.09.1` ... and counting.
 
 ## How to use?
 
@@ -42,7 +42,7 @@ Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-k
 
 ## Versions
 
-* kotlin: 1.9.22 - used in kotlin compiler und kotlin libs.
+* Kotlin: 2.1.20 - used in kotlin compiler und kotlin libs.
 
 ## Release
 
