@@ -4,7 +4,7 @@ A common Maven parent POM for BPM Crafters projects.
 
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Development branches](https://github.com/bpm-crafters/bpm-crafters-maven-parent/actions/workflows/development.yml/badge.svg)](https://github.com/bpm-crafters/bpm-crafters-maven-parent/actions/workflows/development.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/dev.bpm-crafters.maven.parent/maven-parent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/dev.bpm-crafters.maven.parent/maven-parent)
+![Maven Central Version](https://img.shields.io/maven-central/v/dev.bpm-crafters.maven.parent/maven-parent)
 
 ## About
 

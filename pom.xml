@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2025.07.1</version>
+  <version>2025.07.2</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -753,7 +753,7 @@
             </executions>
           </plugin>
 
-          <!-- [RELEASE] NEXUS (version, config, execution) -->
+          <!-- [RELEASE] NEXUS (version, configuration) -->
           <plugin>
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
@@ -762,31 +762,8 @@
             <configuration>
               <publishingServerId>central</publishingServerId>
               <autoPublish>true</autoPublish>
-              <waitUntil>published</waitUntil>
             </configuration>
           </plugin>
-          <!-- Disable OLD Nexus deployment
-          <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.7.0</version>
-            <extensions>true</extensions>
-            <configuration>
-              <serverId>ossrh</serverId>
-              <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-              <autoReleaseAfterClose>true</autoReleaseAfterClose>
-            </configuration>
-            <executions>
-              <execution>
-                <id>default-deploy</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          -->
         </plugins>
       </build>
     </profile>
@@ -805,20 +782,6 @@
     <developerConnection>scm:git:git@github.com:bpm-crafters/bpm-crafters-maven-parent.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
-
-  <!--
-  Deactivate old repository management for oss.sonatype.org
-  <distributionManagement>
-  <snapshotRepository>
-    <id>ossrh</id>
-    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
-  </snapshotRepository>
-  <repository>
-    <id>ossrh</id>
-    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-  </repository>
-  </distributionManagement>
--->
 
   <developers>
     <developer>
