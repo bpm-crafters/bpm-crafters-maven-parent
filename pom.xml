@@ -47,7 +47,7 @@
     <kotlin-logging.version>7.0.7</kotlin-logging.version>
 
     <!-- TEST -->
-    <junit5.version>5.13.3</junit5.version>
+    <junit5.version>5.13.4</junit5.version>
   </properties>
 
   <dependencyManagement>
