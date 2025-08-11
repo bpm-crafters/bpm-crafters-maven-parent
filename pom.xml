@@ -44,7 +44,7 @@
     <jdk.version>17</jdk.version>
 
     <kotlinx-serialization.version>1.6.0</kotlinx-serialization.version>
-    <kotlin-logging.version>7.0.11</kotlin-logging.version>
+    <kotlin-logging.version>7.0.12</kotlin-logging.version>
 
     <!-- TEST -->
     <junit5.version>5.13.4</junit5.version>
