@@ -236,6 +236,7 @@
             <jvmTarget>${java.version}</jvmTarget>
             <args>
                 <arg>-java-parameters</arg>
+                <arg>-Xannotation-default-target=param-property</arg>
             </args>
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
