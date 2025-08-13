@@ -42,7 +42,7 @@ Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-k
 
 ## Versions
 
-* Kotlin: 2.1.20 - used in kotlin compiler und kotlin libs.
+* Kotlin: 2.2.0 - used in kotlin compiler und kotlin libs.
 
 ## Release
 

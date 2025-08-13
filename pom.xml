@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2025.07.3</version>
+  <version>2025.08.1</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -36,18 +36,18 @@
 
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>2.2.0</kotlin.version>
-    <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
-    <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
+    <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
+    <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
     <kotlinx-serialization.version>1.6.0</kotlinx-serialization.version>
-    <kotlin-logging.version>7.0.7</kotlin-logging.version>
+    <kotlin-logging.version>7.0.12</kotlin-logging.version>
 
     <!-- TEST -->
-    <junit5.version>5.13.3</junit5.version>
+    <junit5.version>5.13.4</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -234,6 +234,9 @@
 
           <configuration>
             <jvmTarget>${java.version}</jvmTarget>
+            <args>
+                <arg>-java-parameters</arg>
+            </args>
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
               <!--              <plugin>spring</plugin>-->
@@ -381,7 +384,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.4.1</version>
+          <version>3.5.0</version>
         </plugin>
 
         <!-- DEPENDENCY (version) -->
@@ -405,7 +408,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.1</version>
           <executions>
             <execution>
               <id>enforce-maven</id>
@@ -453,7 +456,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.7</version>
+          <version>3.2.8</version>
         </plugin>
 
         <!-- INSTALL (version) -->
@@ -603,7 +606,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.13.0</version>
+          <version>7.14.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
