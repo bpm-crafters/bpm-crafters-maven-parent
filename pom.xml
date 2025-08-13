@@ -36,8 +36,8 @@
 
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>2.2.0</kotlin.version>
-    <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
-    <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
+    <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
+    <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
@@ -234,6 +234,9 @@
 
           <configuration>
             <jvmTarget>${java.version}</jvmTarget>
+            <args>
+                <arg>-java-parameters</arg>
+            </args>
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
               <!--              <plugin>spring</plugin>-->
