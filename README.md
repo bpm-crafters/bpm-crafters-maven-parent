@@ -8,7 +8,7 @@ A common Maven parent POM for BPM Crafters projects.
 
 ## About
 
-Maven poms are quite bloated, Most of the settings (how to compile, how to deploy) are repeated over and over.
+Maven poms are quite bloated, most of the settings (how to compile, how to deploy) are repeated over and over.
 This maven-parent aims to reduce the xml in your `pom.xml` to the things you really want to express in your library or application project.
 
 By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library projects we are currently building and maintaining under `bpm-crafters` organization.
@@ -39,10 +39,6 @@ Carefully analyse your pom (and the effective pom) and remove duplications, unin
 ### Kotlin only compilation
 
 Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-kotlin-and-java-sources) for maven/kotlin the correct kotlin and java compilers are included.
-
-## Versions
-
-* Kotlin: 2.2.0 - used in kotlin compiler und kotlin libs.
 
 ## Release
 

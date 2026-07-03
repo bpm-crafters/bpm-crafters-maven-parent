@@ -4,7 +4,7 @@
 
   <groupId>dev.bpm-crafters.maven.parent</groupId>
   <artifactId>maven-parent</artifactId>
-  <version>2026.06.1</version>
+  <version>2026.07.1</version>
 
   <name>Maven Parent for BPM Crafters</name>
   <description>Maven parent for project.</description>
@@ -35,7 +35,7 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>2.3.21</kotlin.version>
+    <kotlin.version>2.4.0</kotlin.version>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -47,7 +47,7 @@
     <kotlin-logging.version>8.0.4</kotlin-logging.version>
 
     <!-- TEST -->
-    <junit5.version>6.1.0</junit5.version>
+    <junit5.version>6.1.1</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -537,7 +537,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.14</version>
+          <version>0.8.15</version>
           <executions>
             <execution>
               <id>pre-unit-test</id>
@@ -607,7 +607,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.22.0</version>
+          <version>7.23.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
@@ -761,7 +761,7 @@
           <plugin>
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
-            <version>0.10.0</version>
+            <version>0.11.0</version>
             <extensions>true</extensions>
             <configuration>
               <publishingServerId>central</publishingServerId>
