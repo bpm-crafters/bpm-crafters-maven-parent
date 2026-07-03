@@ -40,10 +40,6 @@ Carefully analyse your pom (and the effective pom) and remove duplications, unin
 
 Following the [x-compile guide](https://kotlinlang.org/docs/maven.html#compile-kotlin-and-java-sources) for maven/kotlin the correct kotlin and java compilers are included.
 
-## Versions
-
-* Kotlin: 2.2.0 - used in kotlin compiler und kotlin libs.
-
 ## Release
 
 1. close milestone in GitHub - this will create a GitHub release draft
