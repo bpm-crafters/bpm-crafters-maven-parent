@@ -47,11 +47,16 @@ jobs:
         id: parent-version
         run: echo "value=$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout)" >> "$GITHUB_OUTPUT"
 
+      - name: Configure example parent versions
+        run: |
+          for EXAMPLE in example example-hybrid; do
+            sed -i "s|\${revision}|${{ steps.parent-version.outputs.value }}|" "$EXAMPLE/pom.xml"
+          done
+
       - name: Exercise the example artifact lifecycle
         run: |
           for EXAMPLE in example example-hybrid; do
             ./mvnw -f "$EXAMPLE/pom.xml" clean deploy -Prelease -B -ntp \
-              -Drevision="${{ steps.parent-version.outputs.value }}" \
               -Dgpg.keyname="${{ secrets.GPG_KEYNAME }}" \
               -DskipPublishing=true
           done
