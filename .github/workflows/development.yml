@@ -27,7 +27,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v6
         with:
-          java-version: 17
+          java-version-file: .java-version
           distribution: 'zulu'
           cache: maven
 
@@ -37,4 +37,22 @@ jobs:
 
       # Build
       - name: Build with Maven
-        run: ./mvnw clean verify -U -B -T4
+        run: ./mvnw clean install -ntp -U -B -T4
+
+      - name: Extract parent version
+        id: parent-version
+        run: echo "value=$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout)" >> "$GITHUB_OUTPUT"
+
+      - name: Configure example parent versions
+        run: |
+          for EXAMPLE in example example-hybrid; do
+            sed -i "s|\${revision}|${{ steps.parent-version.outputs.value }}|" "$EXAMPLE/pom.xml"
+          done
+
+      - name: Exercise the example artifact lifecycle
+        run: |
+          for EXAMPLE in example example-hybrid; do
+            ./mvnw -f "$EXAMPLE/pom.xml" clean deploy -Prelease -B -ntp \
+              -Dgpg.skip=true \
+              -DskipPublishing=true
+          done
