@@ -47,7 +47,7 @@ jobs:
         run: |
           for EXAMPLE in example example-hybrid; do
             ./mvnw -f "$EXAMPLE/pom.xml" clean deploy -Prelease -B -ntp \
-              -DREVISION="${{ steps.parent-version.outputs.value }}" \
+              -Drevision="${{ steps.parent-version.outputs.value }}" \
               -Dgpg.skip=true \
               -DskipPublishing=true
           done
